@@ -47,7 +47,7 @@ const Destination = () => {
                         </div>
                     </section>
                     <section className="max-h-52 mt-3">
-                        <h2 className="font-decor text-4xl text-purple">"{currentDest.desc}"</h2>
+                        <h2 className="font-decor text-4xl text-purple">&ldquo;{currentDest.desc}&rdquo;</h2>
                         <p className="font-serif text-xl text-black">
                             {currentDest.longDesc.section1.text} 
                             <Link href={link1Dest}>
