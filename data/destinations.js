@@ -15,7 +15,7 @@ var destinations = [
         id: 3,
         name: 'Idaho',
         img: 'idaho.png',
-        desc: "Famous year 'round sports center"
+        desc: "Famous year &apos;round sports center"
     },
     {
         id: 4,
