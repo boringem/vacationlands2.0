@@ -31,7 +31,7 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn More
+          Learn More 
         </a>
         <a
           href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
