@@ -57,16 +57,16 @@ class DetailNav extends React.Component {
         }
 
         return (
-            <section className="grid grid-cols-1 md:grid-cols-4 bg-purple">
-                <div className="md:col-span-4 text-white p-3">
+            <section className="grid grid-cols-2 md:grid-cols-4 bg-purple">
+                <div className="md:col-span-4 col-span-2 text-white p-3">
                     <h2 className="font-sans text-6xl">{destData.headline}</h2>
                 </div>
-                <nav className="bg-white border-solid border-2 border-purple text-center text-3xl">
+                <nav className="border-solid border-2 border-purple text-center text-3xl">
                     {allViews.map(view => {
                         return (
                             <div 
                                 key={view.id} 
-                                className={view.linkCl + (view.name === activeView ? " bg-yellow" : "")}
+                                className={view.linkCl + (view.name === activeView ? " bg-yellow" : " bg-white")}
                                 onClick={() => this.handleClick(view.name)}
                                 ariaLabel={view.name}
                             >
@@ -75,7 +75,7 @@ class DetailNav extends React.Component {
                         )
                     })}
                 </nav>
-                <div className="col-span-3">
+                <div className="md:col-span-3">
                     <div className="bg-purple text-white border-solid border-purple border-2 p-6 h-full">
                         <p className="font-serif text-l mb-3">{paragraph1}</p>
                         <p className="font-serif text-l">{paragraph2}</p>
