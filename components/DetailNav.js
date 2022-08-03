@@ -33,19 +33,27 @@ class DetailNav extends React.Component {
 
     render() {
         const { activeView, allViews, currentDest} = this.state
-        var destData;
+        var destData = wyoming;
         
         if (currentDest === 'Wyoming') {
             destData = wyoming;
         }
 
         var viewDetails;
+        var paragraph1;
+        var paragraph2;
         if (this.state.activeView == 'discover') {
             viewDetails = destData.discover;
+            paragraph1 = viewDetails.paragraph1
+            paragraph2 = viewDetails.paragraph2
         } else if (this.state.activeView == 'stay') {
             viewDetails = destData.stay;
-        } else {
+            paragraph1 = viewDetails.paragraph1
+            paragraph2 = viewDetails.paragraph2
+        } else if (this.state.activeView == 'play') {
             viewDetails = destData.play;
+            paragraph1 = viewDetails.paragraph1
+            paragraph2 = viewDetails.paragraph2
         }
 
         return (
@@ -69,8 +77,8 @@ class DetailNav extends React.Component {
                 </nav>
                 <div className="col-span-3">
                     <div className="bg-purple text-white border-solid border-purple border-2 p-6 h-full">
-                        <p className="font-serif text-l mb-3">{viewDetails.paragraph1}</p>
-                        <p className="font-serif text-l">{viewDetails.paragraph2}</p>
+                        <p className="font-serif text-l mb-3">{paragraph1}</p>
+                        <p className="font-serif text-l">{paragraph2}</p>
                     </div>
                 </div>
             </section>
