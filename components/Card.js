@@ -11,7 +11,7 @@ export default function Card(props) {
     var destId = parseInt(props.id)
     var destinations = destinationsData; 
     var destination = destinations.find(x => x.id === destId); 
-    var destImg = '/../public/img/' + destination.img; 
+    var destImg = destination.img; 
     var destName = destination.name;
     var destDesc = destination.desc;
     var linkDest = '/destinations/' + encodeURIComponent(destId);

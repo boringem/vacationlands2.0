@@ -17,7 +17,7 @@ const DestView = () => {
         destName = 'Wyoming'
 
     }
-    var bannerImg = '/../public/img/' + destData.images.banner;
+    var bannerImg = destData.images.banner;
 
     return (
         <main className="container">

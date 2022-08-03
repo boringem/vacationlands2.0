@@ -18,7 +18,7 @@ const Destination = () => {
     var destData, bannerImg, link1Dest, link2Dest, link3Dest;
     if (destName == 'Wyoming') {
         destData = wyoming;
-        bannerImg = '/../public/img/' + destData.images.banner;
+        bannerImg = destData.images.banner;
         link1Dest = '/destinations/' + currentDest.id + '/' + currentDest.longDesc.section1.linkDest;
         link2Dest = '/destinations/' + currentDest.id + '/' + currentDest.longDesc.section2.linkDest;
         link3Dest = '/destinations/' + currentDest.id + '/' + currentDest.longDesc.section3.linkDest;

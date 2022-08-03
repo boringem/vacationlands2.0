@@ -2,7 +2,7 @@ var wyoming =
     {   
         headline: "The Old West",
         images: {
-            banner: "wyoming2.png"
+            banner: "https://asset.cloudinary.com/dq1ki8nxq/c5bc9ae863d3dc355c92085c5b3cd6c9"
         },
         discover: {
             paragraph1: 'The &ldquo;Old West&rdquo; described in this brochure draws on the myth of the frontier to entice travelers.',
