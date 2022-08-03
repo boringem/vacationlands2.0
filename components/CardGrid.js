@@ -2,7 +2,7 @@ import destinationsData from '../data/destinations';
 import Card from './Card';
 
 export default function CardGrid(props) {
-    var gridClass = 'grid justify-items-center gap-4 grid-cols-3'
+    var gridClass = 'grid justify-items-center gap-4 grid-cols-1 md:grid-cols-3'
     var intGrid = parseInt(props.gridCols);
     var destinations = destinationsData;
 

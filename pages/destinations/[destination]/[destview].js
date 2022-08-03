@@ -21,10 +21,10 @@ const DestView = () => {
 
     return (
         <main className="container">
-            <div className="grid grid-cols-2 gap-4">
-                <section className="relative col-span-2">
+            <div className="grid grid-cols-1 md:grid-cols-2 md:gap-4">
+                <section className="relative md:col-span-2">
                     <Banner subtitle="vacationlands" dest={destName} />
-                    <div className="relative h-72 w-1/3">
+                    <div className="relative h-72 w-full md:w-1/3">
                         <Image src={bannerImg} width={450} height={225} alt={destName} layout="fill" />
                     </div>
                 </section>

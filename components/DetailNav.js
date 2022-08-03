@@ -57,8 +57,8 @@ class DetailNav extends React.Component {
         }
 
         return (
-            <section className="grid grid-cols-4 bg-purple">
-                <div className="col-span-4 text-white p-3">
+            <section className="grid grid-cols-1 md:grid-cols-4 bg-purple">
+                <div className="md:col-span-4 text-white p-3">
                     <h2 className="font-sans text-6xl">{destData.headline}</h2>
                 </div>
                 <nav className="bg-white border-solid border-2 border-purple text-center text-3xl">
