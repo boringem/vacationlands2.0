@@ -4,7 +4,7 @@ const nextConfig = {
   swcMinify: true,
   images: {
     loader: 'cloudinary',
-    path: 'https://asset.cloudinary.com/dq1ki8nxq/',
+    path: 'https://res.cloudinary.com/dq1ki8nxq/image/upload/',
   }
 }
 
